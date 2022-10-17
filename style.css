@@ -1,3 +1,7 @@
+body{
+    background-color: #69656236;
+}
+
 #wrapper{
     width: 600px;
     border: 1px gray solid;
@@ -56,6 +60,7 @@ i{
 #sidebar{
     width: 200px;
     float: right;
+    padding: 5px;
 }
 /*lebegő elemek float után clear*/
 .clear{
@@ -67,5 +72,6 @@ img{
 #footer{
     padding-top: 20px;
     padding-bottom: 20px;
+    text-align: center;
 }
 
