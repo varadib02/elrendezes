@@ -3,7 +3,7 @@ body{
 }
 
 #wrapper{
-    width: 600px;
+    max-width: 1200px;
     border: 1px gray solid;
     border-radius: 10px;
     padding: 20px;
@@ -33,6 +33,7 @@ i{
 
 #nav li{
     float: left;
+    text-align: center;
 }
 
 #nav a::first-letter{
@@ -54,13 +55,12 @@ i{
 }
 
 #content{
-    width: 400px;
+    width: 70%;
     float: left;
 }
 #sidebar{
-    width: 200px;
+    width: 30%;
     float: right;
-    padding: 5px;
 }
 /*lebegő elemek float után clear*/
 .clear{
@@ -74,4 +74,14 @@ img{
     padding-bottom: 20px;
     text-align: center;
 }
-
+/*feltétel*/
+@media screen and (max-width: 900px){
+    #wrapper{
+        max-width: 600px;
+    }
+    
+    #content,#sidebar{
+        float:none;
+        width: 100%;
+    }
+}
